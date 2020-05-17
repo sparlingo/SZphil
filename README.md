@@ -6,11 +6,6 @@ The ultimate static generated documentation theme for the JAM-stack. Highly cust
 
 _Beware, Jamdocs is still in heavy development and will probably change a lot in the near future. And the docs for it is still not completed._
 
-## Fast by default
-
-Jamdocs is optimized to be as fast as possible, right now generating 100/100/100/100 score in Google Lighthouse. And 100/100 score in Google Page Speed Insights.
-
-![100/100/100/100 Lighthouse scores](https://github.com/samuelhorn/jamdocs/blob/master/src/assets/img/pagespeed.png)
 
 ## Local installation for development
 
