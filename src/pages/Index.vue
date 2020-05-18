@@ -3,10 +3,10 @@
     <div class="content">
       <h1>{{ $static.metadata.siteName }} - {{ this.description }}</h1>
       <nav>
-        <!-- To use other icons here, you need to import them in the Shortcut component -->
-        <Shortcut link="/getting-started" text="Introduction" icon="play-icon" />
-        <Shortcut link="/theme-configuration" text="Configuration" icon="sliders-icon" />
-        <Shortcut link="/theme-configuration#changing-colors" text="Change colors" icon="eye-icon" />
+        <Shortcut link="/introduction" text="Introduction" icon="book-open-icon" />
+        <Shortcut link="/watch-this" text="Watch" icon="play-icon" />
+        <Shortcut link="/read-this" text="Read" icon="book-icon" />
+        <Shortcut link="/contribute" text="Write" icon="edit-2-icon" />
       </nav>
       <GitLink class="git" size="large" />
     </div>
@@ -32,7 +32,7 @@ export default {
   },
   data() {
     return {
-      description: 'The ultimate static generated documentation theme for the JAM-stack'
+      description: 'Come and think with us'
     }
   },
   metaInfo() {

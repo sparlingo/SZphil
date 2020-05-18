@@ -4,23 +4,22 @@
       "section": "Introduction",
       "topics": [
         {
-          "title": "Getting started",
-          "slug": "getting-started"
+          "title": "Introduction",
+          "slug": "introduction"
         }
       ]
     },
     {
-      "section": "Setup",
+      "section": "Read Stuff",
       "topics": [
         {
-          "title": "Theme configuration",
-          "slug": "theme-configuration"
-        },
-        {
-          "title": "Forestry CMS",
-          "slug": "forestry-cms"
+          "title": "Papers",
+          "slug": "read-this"
         }
       ]
+    },
+    {
+      "section": "Watch Stuff"
     }
   ]
 }

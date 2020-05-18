@@ -1,6 +1,6 @@
 {
   "name": "SZphil",
-  "private": true,
+  "private": false,
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",

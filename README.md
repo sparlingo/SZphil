@@ -1,16 +1,9 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/de44d168-eb1d-47a5-8731-d77bb40af7c8/deploy-status)](https://app.netlify.com/sites/jamdocs/deploys)
-
-# ![Jamdocs](https://github.com/samuelhorn/jamdocs/blob/master/src/assets/img/logo-dark.svg)
-
-The ultimate static generated documentation theme for the JAM-stack. Highly customizable, based on Gridsome, ready to deploy to Netlify in one click. [DEMO](https://jamdocs.netlify.com/)
-
-_Beware, Jamdocs is still in heavy development and will probably change a lot in the near future. And the docs for it is still not completed._
-
+# Shenzhen Philosophy
 
 ## Local installation for development
 
-1. `git clone https://github.com/samuelhorn/jamdocs project-name`.
-2. `cd project-name`
+1. `git clone https://github.com/sparlingo/SZphil.git`.
+2. `cd SZphil`
 3. `gridsome develop`.
 
 ## Deploy to Netlify
