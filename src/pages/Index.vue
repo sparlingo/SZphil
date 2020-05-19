@@ -7,7 +7,7 @@
         <Shortcut link="/watch-this" text="Watch" icon="play-icon" />
         <Shortcut link="/read-this" text="Read" icon="book-icon" />
         <Shortcut link="/contribute" text="Write" icon="edit-2-icon" />
-        <Shortcut link="/polls" text="Be Counted" icon="list-icon" />
+        <!-- <Shortcut link="/polls" text="Be Counted" icon="list-icon" /> -->
       </nav>
       <GitLink class="git" size="large" />
     </div>

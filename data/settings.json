@@ -19,7 +19,17 @@
       ]
     },
     {
-      "section": "Watch Stuff"
+      "section": "Watch Stuff",
+      "topics": [
+        {
+          "title": "Movies",
+          "slug": "watch-this#movies"
+        },
+        {
+          "title": "Lectures",
+          "slug": "watch-this#lectures"
+        }
+      ]
     }
   ]
 }
