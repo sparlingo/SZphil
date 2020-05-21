@@ -1,8 +1,3 @@
-// This is where project configuration and plugin options are located. 
-// Learn more: https://gridsome.org/docs/config
-
-// Changes here require a server restart.
-// To restart press CTRL + C in terminal and run `gridsome develop`
 const path = require('path')
 
 function addStyleResource (rule) {
@@ -17,7 +12,7 @@ function addStyleResource (rule) {
 
 module.exports = {
   siteName: 'SZPhil',
-  siteUrl: 'https://szp.netlify.com',
+  siteUrl: 'https://szp.netlify.app',
   templates: {
     Doc: '/:slug',
   },
