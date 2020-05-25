@@ -14,7 +14,8 @@ module.exports = {
   siteName: 'SZPhil',
   siteUrl: 'https://szp.netlify.app',
   templates: {
-    Doc: '/:slug',
+    Doc: '/:slug'
+    //Movie: '/:slug'
   },
   plugins: [
     {
@@ -35,14 +36,28 @@ module.exports = {
         id: (process.env.GA_ID ? process.env.GA_ID : 'XX-999999999-9')
       }
     },
+    // {
+    //   use: '@gridsome/source-contentful',
+    //   options: {
+    //     space: 'x3kgssebouhp',
+    //     accessToken: '-3UsOMJv4F1xYG-PqlE9PC25jpo2VeCvKw7sO15C1kg', // required
+    //     host: 'cdn.contentful.com',
+    //     environment: 'master',
+    //     typeName: 'Contentful'
+    //   }
+    // },
     {
-      use: '@gridsome/source-contentful',
+      use: 'gridsome-source-sanity',
       options: {
-        space: 'x3kgssebouhp',
-        accessToken: '-3UsOMJv4F1xYG-PqlE9PC25jpo2VeCvKw7sO15C1kg', // required
-        host: 'cdn.contentful.com',
-        environment: 'master',
-        typeName: 'Contentful'
+        projectId: 'jb0uwmcl',
+        dataset: 'production',
+        // Token is only required if dataset is private or `overlayDrafts` is set to true
+        token: '',
+        overlayDrafts: false,
+        watchMode: false,
+        // If the Sanity GraphQL API was deployed using `--tag <name>`,
+        // use `graphqlTag` to specify the tag name. Defaults to `default`.
+        graphqlTag: 'default'
       }
     },
     {
