@@ -18,30 +18,30 @@ module.exports = function (api) {
     }
   })
 
-  api.createPages(async ({ graphql, createPage }) => {
-    const data = await graphql(`{
-      allSanityMovie {
-        edges {
-          node {
-            id
-            title
-            slug {
-              current
-            }
-            overview
-          }
-        }
-      }
-    }`)
+  // api.createPages(async ({ graphql, createPage }) => {
+  //   const data = await graphql(`{
+  //     allSanityMovie {
+  //       edges {
+  //         node {
+  //           id
+  //           title
+  //           slug {
+  //             current
+  //           }
+  //           overview
+  //         }
+  //       }
+  //     }
+  //   }`)
 
-    data.allSanityMovie.edges.forEach(({ node }) => {
-      createPage({
-        path: `/movie/${node.slug.current}`,
-        component: './src/templates/Movie.vue',
-        context: {
-          id: node.id
-        }
-      })
-    })
-  })
+  //   data.allSanityMovie.edges.forEach(({ node }) => {
+  //     createPage({
+  //       path: `/movie/${node.slug.current}`,
+  //       component: './src/templates/Movie.vue',
+  //       context: {
+  //         id: node.id
+  //       }
+  //     })
+  //   })
+  // })
 }

@@ -46,19 +46,30 @@ module.exports = {
     //     typeName: 'Contentful'
     //   }
     // },
+    // {
+    //   use: 'gridsome-source-sanity',
+    //   options: {
+    //     projectId: 'jb0uwmcl',
+    //     dataset: 'production',
+    //     // Token is only required if dataset is private or `overlayDrafts` is set to true
+    //     token: '',
+    //     overlayDrafts: false,
+    //     watchMode: false,
+    //     // If the Sanity GraphQL API was deployed using `--tag <name>`,
+    //     // use `graphqlTag` to specify the tag name. Defaults to `default`.
+    //     graphqlTag: 'default'
+    //   }
+    // },
     {
-      use: 'gridsome-source-sanity',
+      use: 'gridsome-source-graphql',
       options: {
-        projectId: 'jb0uwmcl',
-        dataset: 'production',
-        // Token is only required if dataset is private or `overlayDrafts` is set to true
-        token: '',
-        overlayDrafts: false,
-        watchMode: false,
-        // If the Sanity GraphQL API was deployed using `--tag <name>`,
-        // use `graphqlTag` to specify the tag name. Defaults to `default`.
-        graphqlTag: 'default'
-      }
+        url: 'http://localhost:4000',
+        fieldName: 'poll',
+        typeName: 'polls',
+        headers: {
+          Authorization: `Bearer ${process.env.AUTH_TOKEN}`,
+        },
+      },
     },
     {
       use: '@gridsome/plugin-sitemap',
