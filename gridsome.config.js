@@ -64,8 +64,8 @@ module.exports = {
       use: 'gridsome-source-graphql',
       options: {
         url: 'http://localhost:4000',
-        fieldName: 'poll',
-        typeName: 'polls',
+        fieldName: 'Poll',
+        typeName: 'Polls',
         headers: {
           Authorization: `Bearer ${process.env.AUTH_TOKEN}`,
         },
