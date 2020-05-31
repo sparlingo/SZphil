@@ -63,9 +63,9 @@ module.exports = {
     {
       use: 'gridsome-source-graphql',
       options: {
-        url: 'http://localhost:4000',
-        fieldName: 'Poll',
-        typeName: 'Polls',
+        url: 'https://szp-finity.herokuapp.com/v1/graphql',
+        fieldName: 'hasura',
+        typeName: 'szp',
         headers: {
           Authorization: `Bearer ${process.env.AUTH_TOKEN}`,
         },

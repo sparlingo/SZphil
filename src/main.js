@@ -4,14 +4,14 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import '~/assets/scss/globals.scss'
 import Vuex from 'vuex'
-import Buefy from 'buefy'
-import 'buefy/dist/buefy.min.css'
+//import Buefy from 'buefy'
+//import 'buefy/dist/buefy.min.css'
 require('typeface-source-sans-pro')
 
 export default function (Vue, { router, head, isClient, appOptions }) {
   Vue.use(Vuex)
 
-  Vue.use(Buefy)
+  //Vue.use(Buefy)
 
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
