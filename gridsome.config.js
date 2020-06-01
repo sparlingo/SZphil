@@ -60,16 +60,27 @@ module.exports = {
     //     graphqlTag: 'default'
     //   }
     // },
+    // {
+    //   use: 'gridsome-source-graphql',
+    //   options: {
+    //     url: 'https://szp-finity.herokuapp.com/v1/graphql',
+    //     fieldName: 'hasura',
+    //     typeName: 'szp',
+    //     headers: {
+    //       Authorization: `Bearer ${process.env.AUTH_TOKEN}`,
+    //     },
+    //   },
+    // },
     {
       use: 'gridsome-source-graphql',
       options: {
-        url: 'https://szp-finity.herokuapp.com/v1/graphql',
-        fieldName: 'hasura',
-        typeName: 'szp',
+        url: 'http://127.0.0.1:4000/',
+        fieldName: 'szp',
+        typeName: 'blah',
         headers: {
-          Authorization: `Bearer ${process.env.AUTH_TOKEN}`,
-        },
-      },
+          Authorization: `Bearer ${process.env.AUTH_TOKEN}`
+        }
+      }
     },
     {
       use: '@gridsome/plugin-sitemap',
